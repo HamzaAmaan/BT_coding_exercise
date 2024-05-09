@@ -12,7 +12,16 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jupiter-verion>5.10.2</jupiter-verion>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${jupiter-verion}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -23,7 +32,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.example.Main</mainClass>
+                            <mainClass>org.example.LogFileProcessor</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
