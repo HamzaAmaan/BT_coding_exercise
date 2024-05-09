@@ -36,7 +36,7 @@ class LogFileProcessorTest
     void throwsException_whenLogFileDoesNotExist()
     {
         // WITH
-        final String filePath = ".invalidFile.log";
+        final String filePath = "invalidFile.log";
         final String expectedMessage = "Log file does not exist.";
         // WHEN
         final IllegalArgumentException exception
