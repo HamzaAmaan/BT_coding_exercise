@@ -40,7 +40,7 @@ Replace <path_to_log_file> with the absolute path to the log file you want to pr
 > `docker build -t app . `
 
 4. Run the Docker container, passing the log file as an argument:
->`docker run app src/main/resources/<log_file_name>`
+>`docker run app "src/main/resources/<log_file_name>"`
 > 
 Replace <log_file_name> with the log file name you have copied in step 2.
 
@@ -63,4 +63,4 @@ The application uses Log4j2 and the following can be added to log4j2.properties 
 
     rootLogger=debug, STDOUT
 
-If log4j2.properties does not exist create it in `src/main/resources/`
+If log4j2.properties does not exist create it in `src/main/resources/`. This will require a rebuild.
