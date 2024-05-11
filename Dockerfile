@@ -10,4 +10,4 @@ WORKDIR /app
 RUN mvn clean install
 
 # Set the entrypoint to the Java command
-ENTRYPOINT ["java", "-jar", "target/BT_coding_exercise-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "target/BT_coding_exercise-1.0-SNAPSHOT-jar-with-dependencies.jar"]
